@@ -1,0 +1,633 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Typing Booster" Height="720" Width="1080" Icon="Typing Booster final.png" WindowStartupLocation="CenterScreen" KeyDown="Windows_KeyDown" KeyUp="Windows_KeyUp" >
+
+
+    <Grid Background="#FF212121">
+
+        <StackPanel Orientation="Horizontal">
+
+        </StackPanel>
+
+
+        <TextBlock x:Name="thrower" Margin="0,0,0,425" TextWrapping="Wrap" Text="TextBlock" Width="600" Foreground="White" Background="#FF212121" Padding="10" FontSize="25" HorizontalAlignment="Center" Height="50" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="catcher" Margin="0,0,0,370" TextWrapping="Wrap" Text="TextBox" Width="600" Foreground="White" Background="#FF212121" Padding="10, 10, 5, 0" FontSize="25" HorizontalAlignment="Center" Height="50" VerticalAlignment="Bottom"/>
+
+
+
+        <!--KeyBoard Layout Start-->
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Width="950" Height="340">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF212121" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF787878" Offset="0.009"/>
+                    <GradientStop Color="#FF787878" Offset="0.973"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+
+
+            <!-- Keyboard First line Button-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+
+                <Label x:Name="nearly" Content="`" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="oneButton" Content="1" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="twoButton" Content="2" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="threeButton" Content="3" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="fourButton" Content="4" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="fiveButton" Content="5" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="sixButton" Content="6" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="sevenButton" Content="7" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="eightButton" Content="8" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="nineButton" Content="9" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="zeroButton" Content="0" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="minusButton" Content="-" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="plusButton" Content="=" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label Content=" " HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="80" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="shift.png"/>
+                    </Label.Background>
+                </Label>
+
+            </StackPanel>
+
+            <!-- Keyboard Second line Button-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+
+                <Label x:Name="tab" Content="tab" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="80" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="shift.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="qButton" Content="q" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="wButton" Content="w" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="eButton" Content="e" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="rButton" Content="r" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="tButton" Content="t" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="yButton" Content="y" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="uButton" Content="u" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="iButton" Content="i" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="oButton" Content="o" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="pButton" Content="p" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="bracket1" Content="[" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="bracket2" Content="]" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="slash1" Content="\" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+
+            </StackPanel>
+
+            <!-- Keyboard Third line Button-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+
+                <Label x:Name="capslock1" Content="capslock" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="103" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="capslock.png"/>
+                    </Label.Background>
+                </Label>
+
+
+                <Label x:Name="aButton" Content="a" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="sButton" Content="s" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="dButton" Content="d" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="fButton" Content="f" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="gButton" Content="g" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="hButton" Content="h" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="jButton" Content="j" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="kButton" Content="k" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="lButton" Content="l" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="semiColon" Content=";" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="invertedComma" Content="'" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="capslock2" Content=" " HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="103" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="capslock.png"/>
+                    </Label.Background>
+                </Label>
+
+            </StackPanel>
+
+            <!-- Keyboard Fourth line Button-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+
+                <Label x:Name="shift1" Content="shift" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="135" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="shift.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="zButton" Content="z" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="xButton" Content="x" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="cButton" Content="c" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="vButton" Content="v" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="bButton" Content="b" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="nButton" Content="n" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="mButton" Content="m" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="comma" Content="," HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="dot" Content="." HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="slash" Content="/" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Center" Padding="0" HorizontalContentAlignment="Center" FontSize="25">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="shift2" Content="shift" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="135" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="shift.png"/>
+                    </Label.Background>
+                </Label>
+
+
+            </StackPanel>
+
+            <!-- Keyboard Fifth line Button-->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+
+
+                <Label x:Name="fn" Content="fn" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="control" Content="control" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="option" Content="option" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="command" Content="command" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="75" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom"  Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="kye2.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="space" Content="space" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="300" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5" HorizontalContentAlignment="Center">
+                    <Label.Background>
+                        <ImageBrush ImageSource="space.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="command1" Content="command" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="75" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom"  Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="kye2.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label x:Name="option1" Content="option" HorizontalAlignment="Left" Height="60" Margin="5,5,0,0" VerticalAlignment="Bottom" Width="60" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Keyboard1.png"/>
+                    </Label.Background>
+                </Label>
+
+                <Label Content=" " HorizontalAlignment="Left" Height="60" Margin="53,5,0,0" VerticalAlignment="Bottom" Width="150" Foreground="White" FontFamily="Calibri" VerticalContentAlignment="Bottom" Padding="10,10,10,5">
+                    <Label.Background>
+                        <ImageBrush ImageSource="shift.png"/>
+                    </Label.Background>
+                </Label>
+
+            </StackPanel >
+        </StackPanel>
+
+
+        <!--Level Selection-->
+        <StackPanel Orientation="Horizontal" PreviewTextInput="Windows_TextInput">
+
+
+            <!--Top Level-->
+            <StackPanel Orientation="Vertical">
+
+                <Label Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10,10,5,0" Height="75" FontSize="40" Width="170">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Top Selection.png"/>
+                    </Label.Background>
+
+                </Label>
+
+
+                <ComboBox x:Name="topLevel" HorizontalAlignment="Center" Margin="5,5,0,0" VerticalAlignment="Top" Width="160" Height="35" MaxDropDownHeight="500" BorderBrush="Red" IsTabStop="False" IsTextSearchEnabled="False" FontFamily="Calibri" FontSize="20">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF00E7FF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+
+                    <ComboBoxItem x:Name="TopLevel1" Content="Level 1" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Top_level1">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="TopLevel2" Content="Level 2" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Top_level2">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="TopLevel3" Content="Level 3" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Top_level3">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <!--Mid Level-->
+            <StackPanel Orientation="Vertical">
+
+                <Label Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,10,5,0" Height="75" FontSize="40" Width="170">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Mid Selection.png"/>
+                    </Label.Background>
+
+                </Label>
+
+
+                <ComboBox x:Name="midLevel" HorizontalAlignment="Center" Margin="5,5,0,0" Width="160" Height="35" MaxDropDownHeight="512" BorderBrush="Red" IsTabStop="False" IsTextSearchEnabled="False" VerticalAlignment="Top" FontFamily="Calibri" FontSize="20">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF00E7FF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+
+                    <ComboBoxItem x:Name="MidLevel1" Content="Level 1" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Mid_level1">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E8FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="MidLevel2" Content="Level 2" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Mid_level2" OpacityMask="#FF00C5FF">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="MidLevel3" Content="Level 3" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Mid_level3">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <!--Buttom Level-->
+            <StackPanel Orientation="Vertical">
+
+                <Label Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,10,5,0" Height="75" FontSize="40" Width="170">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Bottom Selection.png"/>
+                    </Label.Background>
+
+                </Label>
+
+
+                <ComboBox x:Name="bottomLevel" HorizontalAlignment="Center" Margin="5,5,0,0" VerticalAlignment="Top" Width="160" Height="35" MaxDropDownHeight="500" BorderBrush="Red" Background="#FF00E7FF" IsTabStop="False" IsTextSearchEnabled="False" FontFamily="Calibri" FontSize="20">
+
+                    <ComboBoxItem x:Name="BottomLevel1" Content="Level 1" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Bottom_level1">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="BottomLevel2" Content="Level 2" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Bottom_level2">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="BottomLevel3" Content="Level 3" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="Bottom_level3">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <!--All Level-->
+            <StackPanel Orientation="Vertical">
+
+                <Label Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="5,10,5,0" Height="75" FontSize="40" Width="170">
+                    <Label.Background>
+                        <ImageBrush ImageSource="All Selection.png"/>
+                    </Label.Background>
+
+                </Label>
+
+
+                <ComboBox x:Name="allLevel" HorizontalAlignment="Center" Margin="5,5,0,0" VerticalAlignment="Top" Width="160" Height="35" MaxDropDownHeight="500" BorderBrush="Red" Background="#FF00E7FF" IsTabStop="False" IsTextSearchEnabled="False" FontSize="20" FontFamily="Calibri">
+
+                    <ComboBoxItem x:Name="AllLevel1" Content="Level 1" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="All_level1">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="AllLevel2" Content="Level 2" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="All_level2">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+
+                    <ComboBoxItem x:Name="AllLevel3" Content="Level 3" FontSize="20" Foreground="White" BorderBrush="White" Height="35" Selected="All_level3">
+                        <ComboBoxItem.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="#FF00E7FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBoxItem.Background>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,5,0,0">
+
+                <TextBlock Margin="5,5,0,0" TextWrapping="Wrap" Text="W/Min:-" Width="65" Foreground="White" Background="#FF212121" Padding="5" FontSize="15" HorizontalAlignment="Center" Height="30" VerticalAlignment="Bottom"/>
+                <TextBlock x:Name="wordPerMin" Margin="5,5,0,0" TextWrapping="Wrap" Text="w/min" Width="100" Foreground="White" Background="#FF212121" Padding="5" FontSize="15" HorizontalAlignment="Center" Height="30" VerticalAlignment="Bottom"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+
+
+
+
+
+
+    </Grid>
+</Window>

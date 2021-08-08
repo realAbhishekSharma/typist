@@ -1,0 +1,46 @@
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\realHydrogen\source\repos\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+E:\Windows app\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+E:\Windows app\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+E:\Windows app\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+E:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\Windows app\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\Windows app\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+D:\Windows app\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\Windows app\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
